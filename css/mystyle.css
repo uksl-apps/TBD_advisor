@@ -1,0 +1,244 @@
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Yanone+Kaffeesatz&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Yanone+Kaffeesatz:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&family=Francois+One&display=swap');
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+/*<!--Start Egaon Ex-->*/
+    label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0 !important;
+    font-weight: normal;
+    text-align: center;
+    color: #7BBA37;
+    font-size: 15px;
+    border: 1px solid transparent;
+}
+.ms-drop ul > li {
+    list-style: none;
+    display: flex !important;
+    background-image: none;
+    position: static;
+}
+.ms-drop ul {
+    overflow-x: inherit;
+    margin: 0;
+    padding: 5px 8px;
+}
+.bs-example ul li:hover {
+    text-decoration: none;
+    background-color: #626a5b1f;
+    color: #000 !important;
+}
+    .my_breadcrumb li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid <?= $process['color'] ?>;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+.my_breadcrumb li a:hover {
+    background: <?= $process['color'] ?> !important;
+}
+
+.my_breadcrumb li a:hover:after {
+    border-left-color: <?= $process['color'] ?> !important;
+}
+.my_breadcrumb li:nth-child(2) a:after {
+    border-left-color: <?= $process['color'] ?>;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active  {
+    color: #fff;
+    background-color: #243463;
+}
+.sub-cat-scroll{
+display:grid;
+max-height: 400px;
+overflow-y: scroll;
+}
+
+.sub-cat-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.sub-cat-scroll::-webkit-scrollbar
+{
+	width: 2px;
+	background-color: #F5F5F5;
+}
+
+.sub-cat-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+/*<!--End Egaon Ex-->*/
+.cat_title{
+ width:100%;
+ background: rgba(0, 0, 0, 0.9);
+ color:white;
+ height:60px;
+ padding-top:5px;
+ font-size:30px;
+}
+
+.tabs-data{
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.tab-contents{
+    margin-left:-20px; 
+}
+
+.tabs {
+  list-style-type: none;
+
+}
+.nav-item {
+border-radius:2px;
+background-color:#F5F5F5;
+color:white;
+padding-left:15px;
+border:1px white; 
+margin-top:10px;
+margin-bottom:-13px;
+height:60px;
+padding-top:5px;
+}
+
+.nav-item:hover{
+background-color:green;
+color:white;
+}
+
+#schedule {
+  padding: 60px 0 60px 0;
+}
+
+#schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  #schedule .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+#schedule .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+#schedule .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+@media (min-width: 991px) {
+  #schedule .sub-heading {
+    width: 75%;
+  }
+}
+
+#schedule .tab-pane {
+  transition: ease-in-out 0.2s;
+}
+
+#schedule .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#schedule .schedule-item:hover {
+  background-color: #fff;
+}
+
+#schedule .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#schedule .schedule-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#schedule .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#schedule .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#schedule .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
